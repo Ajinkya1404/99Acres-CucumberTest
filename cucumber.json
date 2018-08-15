@@ -1,0 +1,131 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 476091362,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User open 99acres website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "99",
+                  "offset": 10
+                }
+              ],
+              "location": "RegisterPageSteps.user_open_acres_website(int)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7755613279,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Login to the Application with valid username and valid password",
+        "description": "",
+        "id": "as-a-user,-i-should-be-able-to-login-successfully-into-99acres-website;login-to-the-application-with-valid-username-and-valid-password;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 285586906,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5142289890,
+              "error_message": "java.lang.NullPointerException\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.test.step_definitions.RegisterPageSteps.user_click_on_Hamburger_icon(RegisterPageSteps.java:38)\r\n\tat ✽.When user click on Hamburger icon(features/LoginPage.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "user click on Hamburger icon",
+            "match": {
+              "location": "RegisterPageSteps.user_click_on_Hamburger_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user click on register button",
+            "match": {
+              "location": "RegisterPageSteps.user_click_on_register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user enter \"test858@gmail.com\" \"Satish@123\" in input box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test858@gmail.com",
+                  "offset": 12
+                },
+                {
+                  "val": "Satish@123",
+                  "offset": 32
+                }
+              ],
+              "location": "LoginPageSteps.user_enter_in_input_box(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user click on Login button",
+            "match": {
+              "location": "LoginPageSteps.user_click_on_Login_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "As a user, I should be able to Login successfully into 99acres website",
+    "description": "",
+    "id": "as-a-user,-i-should-be-able-to-login-successfully-into-99acres-website",
+    "keyword": "Feature",
+    "uri": "features/LoginPage.feature"
+  }
+]
